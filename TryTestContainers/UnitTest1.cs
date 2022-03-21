@@ -20,9 +20,6 @@ public sealed class UnitTest1
             Password = "mysql",
         })
         .Build();
-    private readonly RabbitMqTestcontainer _testMessageBroker = new TestcontainersBuilder<RabbitMqTestcontainer>()
-        .WithMessageBroker(new RabbitMqTestcontainerConfiguration())
-        .Build();
     
     [SetUp]
     public async Task SetUp()
